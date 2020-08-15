@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal JS</title>
-<!-- internal Javascript -->
-    <script>
-        function hello()
+    <title>Document</title>
+
+    <style>
+        .myclass
         {
-            alert('Hello Cdac');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 40px;
         }
-    </script>
+
+        .beautify
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          /* background: black; */
+           /* color: black; */
+
+        }
+    </style>
+
+    <script src="3.js"></script>
 </head>
 <body>
-    <button onclick="hello()">Click me-internal js</button>
-
-    <div style="margin-top:16px ;border: 1px solid;" onclick="hello()">
-        This is clickable
+    <div class="myclass" >
+       <div class="beautify"
+       onmouseover="handlemouseover()"
+        onmouseout="handlemouseout()">
+          hello 
+        </div>
     </div>
 </body>
 </html>

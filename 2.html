@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .myclass
+        {
+            font-size: 50px;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .beautify
+        {
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div>
-    <button onclick="alert('Hello Cdac')">Click Me</button>
+    <div class="myclass" onmouseover="document.querySelector('.beautify').innerHTML='Lets Begin....'"
+    onmouseout="document.querySelector('.beautify').innerHTML='See You Soon'">
+        <div class="beautify"
+        
+         onmouseover="document.querySelector('.myclass').style.color='green'"
+         onmouseout="document.querySelector('.myclass').style.color='white'" > 
+        
+      Hello</div>
     </div>
 </body>
 </html>

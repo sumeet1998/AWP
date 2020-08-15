@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .myclass
+        {
+            font-size: 50px;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: blanchedalmond;
+        }
+    </style>
 </head>
 <body>
-    <div style="background:red;height: 10vh;display:flex; justify-content:center; align-items: center;">Hello Div 1</div>
-    <div style="border: 2px solid yellow;background: linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">Hello Div 2</div>
+    <div class="myclass" 
+         onmouseover="document.querySelector('.myclass').style.color='green'"   
+         onmouseout="document.querySelector('.myclass').style.color='black'"  
+    > Hello world</div>
 </body>
 </html>
