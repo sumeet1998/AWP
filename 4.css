@@ -1,0 +1,13 @@
+.common-style
+{
+
+    background: royalblue;
+    color: whitesmoke;
+
+    margin:5px; 
+    text-align: center; 
+    padding: 12px;
+
+    font-family: cursive;
+    font-size: 15px;
+}
