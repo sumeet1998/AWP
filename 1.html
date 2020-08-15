@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        .myclass
-        {
-            font-size: 50px;
-            font-family: cursive;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: blanchedalmond;
-        }
-    </style>
+    <script src="1.js"></script>
 </head>
 <body>
-    <div class="myclass" 
-         onmouseover="document.querySelector('.myclass').style.color='green'"   
-         onmouseout="document.querySelector('.myclass').style.color='black'"  
-    > Hello world</div>
+    <div> Someone posted Something</div>
+
+    <!-- create an input box -->
+     <div style="margin-top: 4px;margin-bottom: 4px;">
+       <input type="text" name="" id="inputId1" placeholder="comment using this" /> 
+    </div>
+
+    <div>
+        <button id="btnid" onclick="likehere()">like 1</button>
+        <button onclick="commenthere()">comment now</button>
+    </div>
+
+    <!-- will contain all comment -->
+    <div id="commentBox"> </div>
 </body>
 </html>

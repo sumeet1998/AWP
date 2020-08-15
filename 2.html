@@ -3,36 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delete a comment</title>
 
-    <style>
-        .myclass
-        {
-            font-size: 50px;
-            font-family: cursive;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            
-        }
-
-        .beautify
-        {
-            background: black;
-            color: white;
-        }
-    </style>
+    <script src="2.js"> </script>
 </head>
 <body>
-    <div class="myclass" onmouseover="document.querySelector('.beautify').innerHTML='Lets Begin....'"
-    onmouseout="document.querySelector('.beautify').innerHTML='See You Soon'">
-        <div class="beautify"
-        
-         onmouseover="document.querySelector('.myclass').style.color='green'"
-         onmouseout="document.querySelector('.myclass').style.color='white'" > 
-        
-      Hello</div>
+    <div style="margin-bottom: 5px;">
+        <input type="text" placeholder="comment here" id="inputid1">
     </div>
+
+    <div>
+        <button id="btnid" onclick="likehere()">like 1</button>
+        <button onclick="commenthere()">comment now</button>
+    </div>
+
+    <div style="display: flex;justify-content: space-between;" id="referenceCommentId">
+        <div id="commentBox"> </div>
+        <div><button onclick="deletehere(this)"> Delete</button></div>
+    </div>
+    
 </body>
 </html>
